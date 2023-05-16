@@ -1,0 +1,71 @@
+/* pc */
+@Media (min-width: 1024px){
+    .mobie-menu-btn{
+        display: none;
+    }
+}
+
+/* tablet */
+@Media (min-width: 704px) and (max-width:1023px){
+    .mobie-menu-btn{
+        display: none;
+    }
+}
+
+/* mobie */
+@media (max-width: 739px){
+    #nav {
+        display: block;
+    }
+
+    #nav > li{
+        display: block;
+    }
+
+    #nav >li:first-child {
+        display: inline-block;
+    }
+    .search-btn{
+        display: none;
+    }
+
+    .member-items {
+        margin-top: 30px;
+        width: 100%;
+    }
+
+    .img-member{
+        width: 60%;
+    }
+
+    .member-places{
+        width: 100%;
+    }
+
+    .id-fill{
+        width: 100%;
+    }
+
+    .id1{
+        padding-left: 20px;
+        padding-bottom: 15px;
+    }
+
+    .m-margin{
+        margin: 8px 0 ;
+    }
+
+    .place-btn{
+        width: 100%;
+        display: block;
+        text-align: center;
+        height: 46px;
+       line-height: 35px;
+        }
+
+    .send-btn{
+        width: 100%;
+        
+    }
+
+    }

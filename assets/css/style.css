@@ -1,0 +1,358 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+/* common */
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row{
+    overflow: hidden;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col{
+    float: left;
+    padding: 0 8px;
+}
+
+.col-full{
+    width: 100%;
+}
+
+.col-haft{
+    width: 50%;
+}
+
+.mg-top4{
+    margin: 4px;
+}
+
+.mg-top8{
+    margin-top: 8px;
+}
+
+#main{
+
+}
+
+#header{
+    background-color: black;
+    height: 46px;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+}
+
+#nav{
+    display: inline-block;  
+}
+
+#nav > li{
+    display: inline-block;
+    position: relative;
+}
+
+#nav > li > a{
+    color: #fff;
+    font-size: 15px;
+    line-height: 46px;
+    padding: 0 24px;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    display: block;
+    text-decoration: none;
+    font-size: 15px;
+  
+}
+
+.subnav li:hover a,
+#nav > li:hover > a{
+    background-color: #ccc;
+    color: #000;
+}
+
+#nav  li:hover .subnav{
+    display: block;
+}
+
+
+.subnav{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 4px 10px 0 rgba(0,0,0,0.3);
+}
+
+.subnav li{
+    min-width: 150px;
+}
+
+.subnav li a{
+    padding: 0 12px;
+    color: #000;
+    line-height: 38px;
+}
+
+.icon-down{
+    font-size: 14px;
+}
+
+.mobie-menu-btn,
+.search-btn{
+    float: right;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+.mobie-menu-btn .mobie-btn,
+.search-btn .search-button{
+    color: #fff;
+    font-size: 15px;
+    padding: 0 24px;
+    line-height: 46px;
+}
+
+.mobie-menu-btn:hover .ti-menu{
+    background-color: #ccc;
+    color: #000;
+}
+
+
+.search-button:hover{
+    background-color: rgb(244, 67, 54);
+}
+
+
+#slider{
+    padding-top: 50%;
+    background: url('/assets/tour-description/chicago.jpg') top center /cover no-repeat;
+    position: relative;
+    margin-top: 46px;
+}
+
+.text-content{
+    position: absolute;
+    color: #fff;
+    bottom: 0;
+    padding-bottom: 32px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.text-heading{
+    font-size: 24px;
+    text-transform: capitalize;
+    padding-bottom: 15px;
+}
+
+.text-description{
+    font-size: 15px;
+    padding-bottom: 15px;
+    font-weight: 600;
+    letter-spacing: 0.01px;
+}
+
+/* content */
+.content-section{
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.sectione-heading{
+   margin-bottom: 25px;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    text-align: center;
+
+}
+
+.section-sub-heading{
+    margin-bottom: 15px;
+    font-size:15px;
+    font-style: italic;
+    opacity: 0.6;
+    text-align: center;
+
+}
+
+.about-text{
+    margin-bottom: 15px;
+    font-size:15px;
+    text-align: justify;
+    line-height: 22px;
+    
+}
+
+.member-name{
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    padding-top: 47px;
+    padding-bottom: 32px;
+}
+
+.member-description{
+    float: left;
+    width: 33.3333%;
+    
+}
+
+.name-member{
+    margin-bottom: 15px;
+}
+
+.img-member{
+    width: 154px;
+}
+
+.about-tourdate{
+    background-color: #000;
+    color: #fff;
+}
+
+.tickets-list{
+    list-style-type: none;
+    color: #000;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.month-tour{
+    border: 1px solid #ddd;
+    color: #757575;
+    padding: 8px 16px;
+}
+
+
+.sold-out{
+    margin-left: 16px;
+    padding: 4px 8px;
+    background-color: #f44336;
+    color: #fff;
+}
+
+.quantity{
+    float: right;
+    background-color: #000;
+    border-radius: 50%;
+    color: #fff;
+    line-height: 17px;
+    padding: 4px 8px;
+    margin-top: -3px;
+}
+
+.place-list{
+    overflow: hidden;
+margin-left: -8px;
+margin-right: -8px;
+padding: 32px 0;
+}
+
+.place-items{
+    float: left;
+    width:33.333%;
+    padding: 0 8px;
+    
+}
+
+.place-img{
+    width: 100%;
+        display: block;
+}
+
+.place-img:hover{
+    opacity: 0.6;
+}
+
+.place-body{
+    color: #000;
+    background-color: #fff;
+    padding: 15px 15px;
+    font-size: 15px;
+}
+
+.place-heading{
+    margin-bottom: 15px;
+}
+
+.place-time{
+    margin-bottom: 15px;
+    opacity: 0.7;
+}
+
+.place-desc{
+    margin-bottom: 25px;
+}
+
+.place-btn{
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding: 8px 16px;
+}
+
+.place-btn:hover{
+    background-color: #ccc;
+    color: #000;
+}
+
+.form-fill{
+    font-size: 18px;
+    padding: 32px 0;
+}
+
+.control-btn{
+    width: 100%;
+    line-height: 40px;
+}
+
+.send-btn{
+    float: right;
+    padding: 8px 16px;
+    color: #fff;
+    background-color: #000;
+}
+
+
+#content{
+}
+
+.map-observe{
+    background: url('/assets/map/map.jpg') top center /cover no-repeat;
+    padding-top: 55%;
+
+}
+
+#footer{
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.end-task{
+    font-size: 15px;
+    padding-top: 15px;
+}
+
+.last-footer{
+    font-size: 24px;
+}
